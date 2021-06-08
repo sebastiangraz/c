@@ -14,7 +14,7 @@ push() {
   fi
 }
 
-g() {
+c() {
   git add "$(git rev-parse --show-toplevel)"
   if [ $# -eq 1 ]; then
     git commit -a -m "$1"
